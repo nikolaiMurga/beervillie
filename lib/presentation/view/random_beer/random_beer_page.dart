@@ -9,9 +9,7 @@ import 'bloc/random_beer_page_state.dart';
 class RandomBeerPage extends StatelessWidget {
   static final RandomBeerPage _randomBeerPage = RandomBeerPage._internal();
 
-  factory RandomBeerPage() {
-    return _randomBeerPage;
-  }
+  factory RandomBeerPage() => _randomBeerPage;
 
   RandomBeerPage._internal();
 

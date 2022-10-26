@@ -16,16 +16,8 @@ class WidgetSplash extends StatelessWidget {
     return BlocBuilder<SplashPageBloc, SplashPageState>(
       builder: (context, state) {
         if (state is InitSplashPageState) {
-          Future.delayed(
-            Duration(seconds: 2),
-            () => _navigation.clearPush(context, NavigationPage()),
-          );
-          return Center(
-            child: Text(
-              BeerStrings.beerVille.toUpperCase(),
-              style: BeerTextStyles.splashTitle,
-            ),
-          );
+          Future.delayed(Duration(seconds: 2), () => _navigation.clearPush(context, NavigationPage()));
+          return Center(child: Text(BeerStrings.beerVille.toUpperCase(), style: BeerTextStyles.splashTitle));
         }
         return Text('NO DATA');
       },

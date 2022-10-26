@@ -12,16 +12,13 @@ import 'package:flutter/widgets.dart';
 class MainPage extends StatelessWidget {
   static final MainPage _mainPage = MainPage._internal();
 
-  factory MainPage() {
-    return _mainPage;
-  }
+  factory MainPage() => _mainPage;
 
   MainPage._internal();
 
   @override
   Widget build(BuildContext context) {
-    final RandomBeerPageBloc _randomBeerPageBloc =
-        context.bloc<RandomBeerPageBloc>();
+    final RandomBeerPageBloc _randomBeerPageBloc = context.bloc<RandomBeerPageBloc>();
 
     return Scaffold(
       appBar: AppBarMain(),
@@ -29,27 +26,10 @@ class MainPage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(15.0),
-            child: ButtonMain(
-              text: BeerStrings.suggestMeABeer,
-              onTap: () => _randomBeerPageBloc.add(ShowRandomBeerPageEvent()),
-            ),
+            child: ButtonMain(text: BeerStrings.suggestMeABeer, onTap: () => _randomBeerPageBloc.add(ShowRandomBeerPageEvent())),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 17.0),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: WidgetAllBeers(),
-            ),
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 15.0,
-                vertical: 15,
-              ),
-              child: WidgetBeersList(),
-            ),
-          ),
+          Padding(padding: const EdgeInsets.only(left: 17.0), child: Align(alignment: Alignment.centerLeft, child: WidgetAllBeers())),
+          Expanded(child: Padding(padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15), child: WidgetBeersList())),
         ],
       ),
     );
