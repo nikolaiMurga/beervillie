@@ -1,0 +1,63 @@
+name: beerville_flutter
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+2
+
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # http manager
+  retrofit:
+  logger:
+  dio:
+
+  # draw colorful console logs
+  ansicolor:
+
+  cupertino_icons: ^1.0.3
+
+  # state management (BloC)
+  flutter_bloc: ^7.2.0
+
+  # http
+  http: ^0.13.3
+
+  # dependency injection
+  get_it: ^7.2.0
+  injectable: ^1.5.0
+
+  # database
+  floor: ^1.2.0
+
+  # json serializing
+  json_serializable: ^5.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.2
+  injectable_generator: ^1.5.2
+  floor_generator: ^1.2.0
+  retrofit_generator:
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/presentation/res/drawable/
+
+  fonts:
+    - family: mont
+      fonts:
+        - asset: lib/presentation/res/fonts/mont.ttf
+
+  # see https://flutter.dev/custom-fonts/#from-packages

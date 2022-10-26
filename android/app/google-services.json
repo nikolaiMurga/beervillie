@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "52930932206",
+    "project_id": "beerville-a9057",
+    "storage_bucket": "beerville-a9057.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52930932206:android:523fe91dbc7aa30ff9b2ff",
+        "android_client_info": {
+          "package_name": "beervilleflutter.beerville_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52930932206-99487eph5vmeueia3t959duqua2fqga1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1wCRJc2VTRIVY-P29PMmpQ3zNUbL2kVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52930932206-99487eph5vmeueia3t959duqua2fqga1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
