@@ -20,15 +20,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<SplashPageBloc>(
-            create: (context) => SplashPageBloc()..add(LoadSplashPageEvent())),
-        BlocProvider<NavigationPageBloc>(
-            create: (context) => NavigationPageBloc()),
-        BlocProvider<MainPageBloc>(
-            create: (context) => MainPageBloc()..add(LoadBeersEvent())),
-        BlocProvider<RandomBeerPageBloc>(
-          create: (context) => RandomBeerPageBloc(),
-        ),
+        BlocProvider<SplashPageBloc>(create: (context) => SplashPageBloc()..add(LoadSplashPageEvent())),
+        BlocProvider<NavigationPageBloc>(create: (context) => NavigationPageBloc()),
+        BlocProvider<MainPageBloc>(create: (context) => MainPageBloc()..add(LoadBeersEvent())),
+        BlocProvider<RandomBeerPageBloc>(create: (context) => RandomBeerPageBloc()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

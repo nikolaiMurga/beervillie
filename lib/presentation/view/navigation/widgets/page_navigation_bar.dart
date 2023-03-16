@@ -8,8 +8,8 @@ import 'package:beerville_flutter/presentation/view/navigation/bloc/navigation_p
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class NavigationBarMain extends StatelessWidget {
-  const NavigationBarMain({Key? key}) : super(key: key);
+class PageNavigationBar extends StatelessWidget {
+  const PageNavigationBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
