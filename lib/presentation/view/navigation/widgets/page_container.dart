@@ -3,8 +3,8 @@ import 'package:beerville_flutter/presentation/view/navigation/bloc/navigation_p
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class WidgetPageContainer extends StatelessWidget {
-  const WidgetPageContainer({Key? key}) : super(key: key);
+class PageContainer extends StatelessWidget {
+  const PageContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) =>

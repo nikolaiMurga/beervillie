@@ -1,7 +1,6 @@
-import 'package:beerville_flutter/presentation/view/navigation/widgets/navigation_bar_main.dart';
-import 'package:beerville_flutter/presentation/view/navigation/widgets/widget_main_page.dart';
+import 'package:beerville_flutter/presentation/view/navigation/widgets/page_container.dart';
+import 'package:beerville_flutter/presentation/view/navigation/widgets/page_navigation_bar.dart';
 import 'package:beerville_flutter/presentation/view/random_beer/random_beer_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavigationPage extends StatelessWidget {
@@ -14,8 +13,8 @@ class NavigationPage extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         children: [
           Scaffold(
-            body: WidgetPageContainer(),
-            bottomNavigationBar: NavigationBarMain(),
+            body: PageContainer(),
+            bottomNavigationBar: PageNavigationBar(),
           ),
           RandomBeerPage(),
         ],

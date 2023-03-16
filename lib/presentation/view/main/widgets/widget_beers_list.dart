@@ -29,14 +29,10 @@ class WidgetBeersList extends StatelessWidget {
               itemBuilder: (context, index) => BeerCard(state.beerList[index]),
             ),
             onNotification: (ScrollEndNotification notification) {
-              if (notification is ScrollEndNotification) {
-                if (_controller.position.extentAfter == 0)
-                  _mainPageBloc.add(NextPageScrollEvent());
-              }
-              if (notification is ScrollEndNotification) {
-                if (_controller.position.extentBefore == 0)
-                  _mainPageBloc.add(PreviousPageScrollEvent());
-              }
+              if (_controller.position.extentAfter == 0) _mainPageBloc.add(NextPageScrollEvent());
+
+              if (_controller.position.extentBefore == 0) _mainPageBloc.add(PreviousPageScrollEvent());
+
               return false;
             },
           );

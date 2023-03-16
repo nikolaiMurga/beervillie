@@ -2,13 +2,11 @@ import 'package:beerville_flutter/presentation/view/navigation/bloc/navigation_p
 import 'package:beerville_flutter/presentation/view/navigation/bloc/navigation_page_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class NavigationPageBloc
-    extends Bloc<NavigationPageEvent, NavigationPageState> {
+class NavigationPageBloc extends Bloc<NavigationPageEvent, NavigationPageState> {
   NavigationPageBloc() : super(MainPageNavigationState());
 
   @override
-  Stream<NavigationPageState> mapEventToState(
-      NavigationPageEvent event) async* {
+  Stream<NavigationPageState> mapEventToState(NavigationPageEvent event) async* {
     int index = event.toIndex();
     switch (index) {
       case 0:
@@ -26,6 +24,7 @@ class NavigationPageBloc
     }
   }
 }
+
 
 extension NavigationIndexesExtension on int {
   NavigationPageEvent toEvent() {

@@ -15,10 +15,7 @@ abstract class BeersApi {
   @GET(Endpoints.randomBeer)
   Future<List<BeerResponse>> fetchRandomBeer();
 
-  @GET(Endpoints.parameterizedBeerIbu +
-      '{ibu}' +
-      Endpoints.parameterizedBeerAbv +
-      '{abv}')
+  @GET(Endpoints.parameterizedBeerIbu + '{ibu}' + Endpoints.parameterizedBeerAbv + '{abv}')
   Future<List<BeerResponse>> fetchParameterizedBeer(
     @Path('ibu') double ibu,
     @Path('abv') double abv,

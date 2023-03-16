@@ -15,6 +15,5 @@ class BeerRemoteRepositoryImpl extends BeerRemoteRepository {
   Future<List<BeerResponse>> fetchRandomBeer() => _remote.fetchRandomBeer();
 
   @override
-  Future<List<BeerResponse>> fetchParameterizedBeer(double ibu, double abv) =>
-      _remote.fetchParameterizedBeer(ibu, abv);
+  Future<List<BeerResponse>> fetchParameterizedBeer(double ibu, double abv) => _remote.fetchParameterizedBeer(ibu, abv);
 }

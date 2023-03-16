@@ -7,7 +7,6 @@ import 'package:beerville_flutter/presentation/view/main/widgets/widget_main_pag
 import 'package:beerville_flutter/presentation/view/random_beer/bloc/random_beer_page_bloc.dart';
 import 'package:beerville_flutter/presentation/view/random_beer/bloc/random_beer_page_event.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MainPage extends StatelessWidget {
   static final MainPage _mainPage = MainPage._internal();
